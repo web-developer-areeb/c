@@ -1,15 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-  int a = 781; // 2 to 4 byte depending on architecture
+int main()
+{
+  int a = 781;                       // 2 to 4 byte depending on architecture
   unsigned int storeBigValue = 3423; // positive integers
-  unsigned short integerValue = 8; 
-  short forShortValues = 8; // for short values
+  unsigned short integerValue = 8;
+  short forShortValues = 8;    // for short values
   long forLongValues = 843434; // for long values
 
-
-  float b = 8.78; // 4 bytes - 6 decimal places
-  double myFloat1 = 7.4534; // 8 bytes 15 decimal places
+  float b = 8.78;                         // 4 bytes - 6 decimal places
+  double myFloat1 = 7.4534;               // 8 bytes 15 decimal places
   long double myFloat2 = 7.4533451352345; // 16 bytes 19 decimal places precision
 
   // single quote for single character and double quote for string
@@ -18,7 +18,6 @@ int main() {
 
   // const int i = 9;
   // i = 10; Not allowed
-  
 
   // printf("\nPrinting integer value %d\n", a);
   // printf("Printing float value %f\n", b);
@@ -35,10 +34,10 @@ int main() {
   // int tomato = 10;
   // int mango = 20;
 
-  // Operators 
+  // Operators
   // Arithmatic +, -, *, /, %(modulus), ++ (increment), -- (decrement)
   // Relational ==, !=, >, <, <=, >=
-  // Logical 
+  // Logical
   // Bitwise
   // Assignment
   // Misc Operators
@@ -57,7 +56,7 @@ int main() {
   // A = 60 B = 13
   // A = 00111100
   // B = 00001101
-  // R = 00001100 result of & 
+  // R = 00001100 result of &
 
   // int A = 60, B = 13;
 
@@ -65,9 +64,8 @@ int main() {
   // printf("Bitwise OR operator returned %d\n", A|B);
   // printf("Bitwise XOR operator returned %d\n", A^B);
   // printf("Bitwise ONCE COMPLEMENT operator returned %d\n", ~B);
-  // printf("Bitwise LEFT SHIFT operator returned %d\n", A<<B); 
-  // printf("Bitwise RIGHT SHIFT operator returned %d\n", A>>B); 
-
+  // printf("Bitwise LEFT SHIFT operator returned %d\n", A<<B);
+  // printf("Bitwise RIGHT SHIFT operator returned %d\n", A>>B);
 
   // Assigment Operators
   // =, +=, -=, *=, %, etc..
@@ -83,7 +81,7 @@ int main() {
   // printf("\n\n *********** Taking input from user in c *********");
   // int userInput;
   // printf("\nPlease enter the value of userInput\n");
-  // scanf("%d", &userInput); 
+  // scanf("%d", &userInput);
   // printf("You entered %d\n", userInput);
 
   // *********************** Type Casting *********************
@@ -114,7 +112,6 @@ int main() {
   //   printf("You can drive. \n");
   // }
 
-
   // int country;
   // printf("Enter choice 1 or 2. \n 1. India \n 2. USA");
   // scanf("%d", &country);
@@ -128,13 +125,36 @@ int main() {
   // case 2:
   //   printf("Drive at right side of road\n");
   //   break;
-  
+
   // default:
   //   printf("You choose the wrong answer");
   //   break;
   // }
 
-   
+  // int i4 = age < 3? 100 : 200;
+
+  // printf("%d\n", i4);
+
+  printf("\n\n *********** Loops in C *********\n\n");
+
+  // int index = 0;
+  // while (index < 10)
+  // {
+  //   printf("%d\n", index);
+  //   index++;
+  // }
+
+  // for (int i = 0; i < 10; i++)
+  // {
+  //   printf("%d\n", i);
+  // }
+
+  int j = 10;
+
+  do
+  {
+    printf("Do while loop\n");
+  } while (j > 23432);
 
   return 0;
 }
