@@ -18,6 +18,9 @@ float average(float a, float b) {
 
 
 int main() {
+
+  //*************************** Functions ********************
+
   // newPrint("Hello World");
   // printf("%d\n", sum(10, 20));
   // printf("Average of 100 and 299 is %f\n", average(10, 15));
@@ -53,18 +56,20 @@ int main() {
   // printf("\n");
 
 
-  int a = 98;
-  // Creating pointer variable.
-  int *ptr = NULL;
-  // Assign address of a to pointer variable.
-  ptr = &a;
-  printf("\n%d\n", a);
+  //********************* Pointers ************************
 
-  // *ptr means value at ptr address. 
-  // Assigning new value for value at ptr. 
-  *ptr = 988;
+  // int a = 98;
+  // // Creating pointer variable.
+  // int *ptr = NULL;
+  // // Assign address of a to pointer variable.
+  // ptr = &a;
+  // printf("\n%d\n", a);
 
-  printf("%d\n", a);
+  // // *ptr means value at ptr address. 
+  // // Assigning new value for value at ptr. 
+  // *ptr = 988;
+
+  // printf("%d\n", a);
 
 
   return 0;
