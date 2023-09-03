@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 // data_type function_name(parameter_type parametername) {
 //   return value_of_data_type;
@@ -16,6 +17,19 @@ float average(float a, float b) {
   return (a+b)/2;
 };
 
+struct Books
+{
+  char name[50];
+  char author[50];
+  int price;
+  
+} book;
+
+void printStructure(struct Books bk) {
+  printf("Author name is %s\n", bk.author);
+  printf("Book name is %s\n", bk.name);
+  printf("Book price is %d\n", bk.price);
+};
 
 int main() {
 
@@ -71,6 +85,36 @@ int main() {
 
   // printf("%d\n", a);
 
+  // //********************* Pointers ************************
+
+  // // Character arrya terminate with '\0' i.e. end of string. 
+  // char name[3] = {'m', 'y', '\0'};
+  // char str1[65], str2[98], str3[32];
+
+  // printf("%s\n", name);
+
+  // // Copy name to str1
+  // strcpy(str1, name);
+  // printf("%s\n", str1);
+
+  // strcpy(str1, "Areeb ");
+  // printf("%s\n", str1);
+
+  // strcpy(str2, "Ahmad");
+  // strcat(str1, str2);
+  // printf("%s\n", str1);
+
+  // strcpy(str1, "ebc");
+  // strcpy(str2, "def");
+  // printf("%d\n", strcmp(str1, str2));
+
+ //******************* Structure ********************
+  struct Books bk1, bk2;
+  strcpy(bk1.name, "C Programming");
+  strcpy(bk1.author, "Dennis");
+  bk1.price = 78;
+
+  printStructure(bk1);  
 
   return 0;
 }
